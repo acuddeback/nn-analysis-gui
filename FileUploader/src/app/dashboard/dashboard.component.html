@@ -1,0 +1,38 @@
+<div>
+  <p>
+    This system is used to submit your assessment for HW1, upload a file then
+    click "Sumbit" to view your results
+  </p>
+</div>
+
+<div class="input-group mb-3">
+  <div class="custom-file">
+    <input
+      type="file"
+      class="custom-file-input"
+      id="inputGroupFile"
+      (change)="onFileSelected($event)"
+      ng2FileSelect
+      [uploader]="uploader"
+    />
+    <label
+      class="custom-file-label"
+      for="inputGroupFile"
+      aria-describedby="inputGroupFileAddon"
+      >{{ name }}</label
+    >
+  </div>
+  <div class="input-group-append">
+    <button
+      class="btn btn-primary"
+      type="button"
+      id="inputGroupFileAddon"
+      (click)="uploader.uploadAll()"
+      [disabled]="!uploader.getNotUploadedItems().length"
+    >
+      Upload
+    </button>
+  </div>
+</div>
+<!-- <p *ngIf="name">Selected File: {{ name }}</p>   -->
+<p *ngIf="loading">Loading File...</p>

@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  PA2:
+    image: pa2
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 36989:3000
