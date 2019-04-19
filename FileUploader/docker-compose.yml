@@ -1,10 +1,33 @@
-version: '2.1'
+version: '2.0'
 
 services:
-  PA2:
-    image: pa2
-    build: .
+  frontend:
+    image: 'node:8'
+    user: 'root'
     environment:
-      NODE_ENV: production
+      - NODE_ENV=development
+    volumes:
+      - ./:/app
     ports:
-      - 36989:3000
+      - '4200:4200'
+    command: >
+      bash -c " echo 'started and installing frontend...'
+      && cd ./app
+      && npm install
+      && npm install -g @angular/cli
+      && ng serve --host 0.0.0.0"
+
+  services:
+    image: 'node:8'
+    user: 'root'
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/app
+    ports:
+      - '8080:8888'
+    command: >
+      bash -c " echo 'started and installing services...'
+      && cd ./app
+      && npm install
+      && npm start"

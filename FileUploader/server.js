@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Angular DIST output folder
-app.use(express.static(path.join(__dirname, '/dist/PA2')));
+app.use(express.static(path.join(__dirname, '/dist/FileUpload')));
 
 app.use(function(req, res, next) {
   // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
@@ -69,7 +69,7 @@ const PORT = process.env.PORT || 8888;
 
 // Send all other requests to the Angular app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/PA2/index.html'));
+  res.sendFile(path.join(__dirname, '/dist/FileUpload/index.html'));
 });
 
 const server = http.createServer(app);

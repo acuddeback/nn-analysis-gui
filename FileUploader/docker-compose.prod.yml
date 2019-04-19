@@ -1,0 +1,19 @@
+version: '2.0'
+
+services:
+  file_upload:
+    image: 'node:8'
+    user: 'root'
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/app
+    ports:
+      - '8080:8888'
+    command: >
+      bash -c " echo 'started and installing...'
+      && cd ./app
+      && npm install
+      && npm install -g @angular/cli
+      && ng build
+      && npm start"
