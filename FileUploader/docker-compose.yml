@@ -8,12 +8,13 @@ services:
       - NODE_ENV=development
     volumes:
       - ./:/app
+    links:
+      - services:services
     ports:
       - '4200:4200'
     command: >
       bash -c " echo 'started and installing frontend...'
       && cd ./app
-      && npm install
       && npm install -g @angular/cli
       && ng serve --host 0.0.0.0"
 
@@ -29,5 +30,4 @@ services:
     command: >
       bash -c " echo 'started and installing services...'
       && cd ./app
-      && npm install
       && npm start"

@@ -21,6 +21,12 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
+    // if (isDevMode()) {
+    //   this.URL = 'http://services:8080/api/upload';
+    // } else {
+    //   this.URL = 'http://localhost:8080/api/upload';
+    // }
+    console.log(this.URL);
     this.uploader = new FileUploader({
       url: this.URL,
       itemAlias: 'file'
