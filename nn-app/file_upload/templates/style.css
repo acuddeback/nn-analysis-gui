@@ -2,21 +2,19 @@ body {
   background-color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h1 {
+
+h1, .container {
   background-color: #A2D9E8 !important;
   color: #0B2B45 !important;
   align-self: center !important;
   align-content: center !important;
   text-align: center !important;
-  padding: 10px !important;
+  /* padding: 10px !important; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 25px !important;
-  width: 100%;
+  width: 99%;
 }
-
-#content {
-  width: 100%;
-}
-
 p {
   color: #0B2B45;
 }
@@ -32,15 +30,6 @@ p {
   font-size: 16px;
 }
 
-#file-upload {
-  background-color: #A2D9E8 !important;
-  color: #0B2B45;
-  align-self: center;
-  align-content: center;
-  text-align: center;
-  padding: 10px;
-  border-radius: 25px;
-}
 
 .post-form {
 	position: relative;
