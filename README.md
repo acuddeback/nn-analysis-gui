@@ -20,22 +20,15 @@ Network Analysis GUI using the R network analysis tool from
   - This stops docker and removes the containers
 
 ## Start the project
+When you run the project for the first time, run 
+- `docker-compuse up`
 
-In order for the project to run, you must first run it in production mode to install the node_modules, then you can run it in development
+## Run the project 
+When you run the project any following time, it will work if you run
+- `docker-compuse up`
+However, if you make any changes to the Dockerfile or requirements.txt, run 
+- `docker-compuse up --build`
+to update the Docker image. 
 
-### Starting in development mode
-
-- To run in developemnt mode, make sure that you have docker running
-- run `cd FileUploader`
-- run `docker-compose up`
-  - This will start both the node.js server and the Angular development server. This means that any updates made to the Angular files will be auto-updated
-- Naviate to [http://localhost:4200/home](http://localhost:4200/home)
-
-### Starting in production mode
-
-- To run in developemnt mode, make sure that you have docker running
-- run `cd FileUploader`
-- run `docker-compose -f docker-compose.prod.yml up`
-  - This will compile all of the angular code and then serve it out of the server
-  - Any changes made to the angular will **not** be updated in real time
-- Navigate to [http://localhost:8080/home](http://localhost:8080/home)
+# Acknowledgements
+This repository was built with subtantial help and guidance from [Chad Baily](https://github.com/chadbaily)
