@@ -1,0 +1,55 @@
+body {
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+  background-color: #A2D9E8 !important;
+  color: #0B2B45 !important;
+  align-self: center !important;
+  align-content: center !important;
+  text-align: center !important;
+  padding: 10px !important;
+  border-radius: 25px !important;
+
+}
+p {
+  color: #0B2B45;
+}
+
+.btn { 
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#file-upload {
+  background-color: #A2D9E8 !important;
+  color: #0B2B45;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.post-form {
+	position: relative;
+	overflow: hidden;
+  margin: 10px;
+  color: blue;
+}
+.post-form input.upload {
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: red;
+  padding: 15px 32px;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
