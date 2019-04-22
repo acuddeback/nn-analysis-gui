@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^submit/$', views.upload_file, name='upload'),
     url(r'^runscript/$', views.runscript, name='makeplot'),
+    url(r'^results/$', views.results, name='resultrender'),
 ]
