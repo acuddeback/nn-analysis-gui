@@ -10,8 +10,13 @@ h1 {
   text-align: center !important;
   padding: 10px !important;
   border-radius: 25px !important;
-
+  width: 100%;
 }
+
+#content {
+  width: 100%;
+}
+
 p {
   color: #0B2B45;
 }
