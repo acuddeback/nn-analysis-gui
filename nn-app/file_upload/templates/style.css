@@ -3,12 +3,12 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1, .container {
+h1, .contentdiv {
   background-color: #A2D9E8 !important;
   color: #0B2B45 !important;
   align-self: center !important;
-  align-content: center !important;
-  text-align: center !important;
+  align-content: center;
+  text-align: center;
   /* padding: 10px !important; */
   padding-top: 10px;
   padding-bottom: 10px;
@@ -46,4 +46,9 @@ p {
 	cursor: pointer;
 	opacity: 0;
 	filter: alpha(opacity=0);
+}
+
+#legendcontents {
+  align-content: left !important;
+  text-align: left !important;
 }

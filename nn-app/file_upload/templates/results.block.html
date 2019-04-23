@@ -1,16 +1,36 @@
 {% extends 'base.html' %} {% block title %}NN Analysis Results{% endblock %} {% block content %} {% load static %}
 
-<object
-  data="{% static 'Rplots.pdf' %}"
-  type="application/pdf"
-  width="100%"
-  height="100%"
->
-  <p>
-    It appears you don't have a PDF plugin for this browser. No biggie... you
-    can
-    <a href="{% static 'Rplots.pdf' %}">click here to download the PDF file.</a>
-  </p>
-</object>
+<div id="legend" class="contentdiv">
+
+  <h3>
+    Legend
+  </h3>
+  <div id=legendcontents">
+    <h4>Page 1</h4>
+      <p>Black lines indicate positive weight<br>
+        Gray lines indicate negative weigt<br>
+        Thicker Lines = more impact on output</p>
+    <h4>Subsequent Pages</h4>
+      <p>Each page is a histogram showing how all the inputs influence one of the outputs.</p>
+  </div>
+
+</div>
+
+<div id="results" class="contentdiv">
+    <object
+    data="{% static 'Rplots.pdf' %}"
+    type="application/pdf"
+    width="100%"
+    height="100%"
+  >
+    <p>
+      It appears you don't have a PDF plugin for this browser. No biggie... you
+      can
+      <a href="{% static 'Rplots.pdf' %}">click here to download the PDF file.</a>
+    </p>
+  </object>
+
+</div>
+
 
 {% endblock %}
