@@ -30,5 +30,9 @@ However, if you make any changes to the Dockerfile or requirements.txt, run
 - `docker-compuse up --build`
 to update the Docker image. 
 
+# File Compatibility
+
+
 # Acknowledgements
-This repository was built with subtantial help and guidance from [Chad Baily](https://github.com/chadbaily)
+- This repository was built with subtantial help and guidance from [Chad Baily](https://github.com/chadbaily)
+- The analysis package used in this gui is from [Marcus W. Beck](https://github.com/fawda123) and can be found [here](https://github.com/fawda123/NeuralNetTools).
