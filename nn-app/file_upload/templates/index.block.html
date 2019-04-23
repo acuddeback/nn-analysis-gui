@@ -2,7 +2,7 @@
 <div id="file-upload" class="contentdiv">
         <h3>Upload File</h3>
         <p>Upload a texfile with your network structure here.</p>
-        <p>For information on file format, see the github <a href="https://github.com/acuddeback/nn-analysis-gui/blob/master/README.md">Readme</a>.</p>
+        <p>For information on file format, see the github <a href="https://github.com/acuddeback/nn-analysis-gui/blob/master/README.md#file-compatibility">Readme</a>.</p>
         <form method="POST" enctype="multipart/form-data" action="submit/" sclass="post-form">{% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Upload</button>
