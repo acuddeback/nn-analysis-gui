@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block title %}Upload{% endblock %} {% block content %}
 <div id="file-upload" class="contentdiv">
         <h3>Upload File</h3>
-
+        <p>Upload a texfile with your network structure here</p>
         <form method="POST" enctype="multipart/form-data" action="submit/" sclass="post-form">{% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Upload</button>
