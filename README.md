@@ -45,7 +45,7 @@ in_labelh<sub>0</sub>, ..., in_labelh<sub>n</sub> \
 out_labelh<sub>0</sub>, ..., out_labelh<sub>n</sub>
 
 ### Example
-For a 2 &rarr; 5 &rarr; 5 &rarr; 2 network structure with the following attributes,
+For a 2 &rarr; 5 &rarr; 5 &rarr; 2 [network](https://github.com/neu-physics/leptonIdentificationNN/blob/master/network_files/leptonIdNN_E2P2Dec.ipynb) structure with the following attributes,
 ```
 Weight 1: 
  [[ 2.71078656 -0.54482255  1.49119083  3.40287371  2.72451196]
