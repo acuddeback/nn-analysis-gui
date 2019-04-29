@@ -81,20 +81,21 @@ The weights and biases in this file were printed from the weights and biases sho
 ``` python
 W1, b1, W2, b2,b3,W3 = model['W1'], model['b1'], model['W2'], model['b2'],model['b3'],model["W3"]
 
-for i in range(len(b1[0])-1):
+for i in range(len(b1[0])):
     print(b1[0][i], end=",")
-    for j in range(len(W1)-1):
+    for j in range(len(W1)):
         print(W1[j][i], end=",")
 
-for i in range(len(b2[0])-1):
+for i in range(len(b2[0])):
     print(b2[0][i], end=",")
-    for j in range(len(W2)-1):
+    for j in range(len(W2)):
         print(W2[j][i], end=",")
         
-for i in range(len(b3[0])-1):
+for i in range(len(b3[0])):
     print(b3[0][i], end=",")
-    for j in range(len(W3)-1):
+    for j in range(len(W3)):
         print(W3[j][i], end=",")
+
 ```
 
 

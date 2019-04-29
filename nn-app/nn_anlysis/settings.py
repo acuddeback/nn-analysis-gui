@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'ec2-52-15-155-17.us-east-2.compute.amazonaws.com',
     'localhost',
-    ]
+    '52.15.155.17',
+]
 
 
 # Application definition
@@ -118,7 +119,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript, Images, Text files)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATICFILES_DIRS = [
