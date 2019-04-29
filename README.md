@@ -21,13 +21,13 @@ Network Analysis GUI using the R network analysis tool from
 
 ## Start the project
 When you run the project for the first time, run 
-- `docker-compuse up`
+- `docker-compose up`
 
 ## Run the project 
 When you run the project any following time, it will work if you run
-- `docker-compuse up`
+- `docker-compose up`
 However, if you make any changes to the Dockerfile or requirements.txt, run 
-- `docker-compuse up --build`
+- `docker-compose up --build`
 to update the Docker image. 
 
 # File Compatibility
@@ -44,7 +44,7 @@ dim(input), dim(h<sub>0</sub>), ..., dim(h<sub>n</sub>), dim(output)
 in_labelh<sub>0</sub>, ..., in_labelh<sub>n</sub> \
 out_labelh<sub>0</sub>, ..., out_labelh<sub>n</sub>
 
-## Example
+### Example
 For a 2 &rarr; 5 &rarr; 5 &rarr; 2 network structure with the following attributes,
 ```
 Weight 1: 
@@ -98,6 +98,8 @@ for i in range(len(b3[0])):
 
 ```
 
+
+## Interpreting the Results
 
 # Acknowledgements
 - This repository was built with subtantial help and guidance from [Chad Baily](https://github.com/chadbaily)
