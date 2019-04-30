@@ -35,7 +35,7 @@ def upload_file(request):
 def runscript(request):
   form = UploadFileForm()
   subprocess.call (["/usr/bin/Rscript --vanilla file_upload/app-scripts/analysis.r file_upload/app-scripts/input.txt"], shell=True)
-  open('file.txt', 'w').close()
+  open('file_upload/app-scripts/input.txt', 'w').close()
   return render(request, 'results.block.html')
 
 def results(request):
