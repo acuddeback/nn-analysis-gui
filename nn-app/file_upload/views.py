@@ -38,5 +38,3 @@ def runscript(request):
   return render(request, 'results.block.html')
 
 def results(request):
-  open('file_upload/app-scripts/input.txt', 'w').close()
-  return render(request, 'results.block.html')
