@@ -98,8 +98,15 @@ for i in range(len(b3[0])):
 
 ```
 
-
 ## Interpreting the Results
+
+The output of the analysis will include an illustration of the input neural network model. The output will be in the form shown below. The black lines in the illustration indicate positive weight, the gray lines indicate negative weight, and the thicker the line the greater the magnitude of the weight.
+![network analysis output example](./static/output_breakdown.png)
+The breakdown of the weights in the illustration is as follows:
+- 1: Big and positive
+- 2: Small and positive
+- 3: Big and negative
+- 4: Small and negative
 
 # Acknowledgements
 - This repository was built with subtantial help and guidance from [Chad Baily](https://github.com/chadbaily)
